@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Generator</h1>
+        <form id="invoice-form">
+            <h2>Customer Details</h2>
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+            <label for="customer-address">Address:</label>
+            <input type="text" id="customer-address" name="customer-address" required>
+            <label for="customer-phone">Phone Number:</label>
+            <input type="text" id="customer-phone" name="customer-phone" required>
+
+            <h2>Delivery Details</h2>
+            <label for="delivery-type">Delivery Type:</label>
+            <select id="delivery-type" name="delivery-type" required>
+                <option value="Standard Delivery">Standard Delivery</option>
+                <option value="Express Delivery">Express Delivery</option>
+            </select>
+
+            <h2>Item Details</h2>
+            <div id="items-container">
+                <div class="item-row">
+                    <label for="item-description">Description:</label>
+                    <input type="text" id="item-description" name="item-description[]" required>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity[]" required>
+                    <label for="price">Price per Unit:</label>
+                    <input type="number" id="price" name="price[]" required>
+                    <label for="tax">Tax Rate (%):</label>
+                    <input type="number" id="tax" name="tax[]" required>
+                </div>
+            </div>
+            <button type="button" id="add-item">Add Item</button>
+            <button type="submit">Generate Invoice</button>
+        </form>
+
+        <div id="invoice-container"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
