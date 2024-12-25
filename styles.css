@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#invoice-container {
+    margin-top: 20px;
+}
+
+.invoice {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.invoice-header, .invoice-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.invoice-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.invoice-details, .invoice-items {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.invoice-details td, .invoice-items th, .invoice-items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.invoice-items th {
+    background-color: #f4f4f4;
+}
